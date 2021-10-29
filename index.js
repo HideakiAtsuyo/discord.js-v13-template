@@ -2,7 +2,7 @@ var nodeVersion = process.version.split('.');
 var major = nodeVersion[0].replace("v", "");
 var minor = nodeVersion[1];
 
-if(major < 16 || major >= 16 && minor < 6){
+if(major < 16 || major <= 16 && minor < 6){
     console.log("Minimum Node.JS v16.6 is required for Discord.JS v13");
     process.exit(-1);
 }
